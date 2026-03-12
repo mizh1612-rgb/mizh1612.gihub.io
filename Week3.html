@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem: Page Content</title>
+    <style>
+        /* CSS để giao diện giống ảnh mẫu */
+        body {
+            background-color: #f0f0f0; /* Màu nền nhẹ cho toàn trang */
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        /* Thẻ bao ngoài cùng */
+        section {
+            border: 2px solid #a5b1b5;
+            padding: 15px;
+            background-color: #d9e0e2;
+        }
+
+        /* Từng bài blog */
+        article {
+            border: 1px solid #7a8a91;
+            margin-bottom: 15px;
+            padding: 10px;
+            background-color: #e8ecef;
+        }
+
+        /* Loại bỏ margin cuối để không bị thừa khoảng cách */
+        article:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Phần đầu của mỗi bài viết */
+        header {
+            border-bottom: 1px solid #7a8a91;
+            margin-bottom: 10px;
+            padding-bottom: 5px;
+        }
+
+        h2 {
+            margin: 0;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .meta-info {
+            font-style: italic;
+            font-size: 0.9em;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        .content {
+            font-size: 1.1em;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+
+        <article>
+            <header>
+                <h2>Just Another Day</h2>
+                <p class="meta-info">Written by Christina on January 11th</p>
+            </header>
+            <p class="content">This is my second blog entry, and I just wanted to check in on you</p>
+        </article>
+        
+        <article>
+            <header>
+                <h2>My First Blog Entry</h2>
+                <p class="meta-info">Written by Christina on January 10th</p>
+            </header>
+            <p class="content">I'm so happy to write my first blog entry – yay!</p>
+        </article>
+
+    </section>
+
+</body>
+</html>
