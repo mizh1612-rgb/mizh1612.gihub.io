@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extra Exercises</title>
+    <script>
+        function calculateRectangle() {
+            var dai = parseFloat(document.getElementById('dai').value);
+            var rong = parseFloat(document.getElementById('rong').value);
+            if (isNaN(dai) || isNaN(rong)) {
+                alert("Vui lòng nhập số hợp lệ!");
+            } else {
+                var chuVi = (dai + rong) * 2;
+                var dienTich = dai * rong;
+                document.getElementById('resRect').innerHTML = "Chu vi: " + chuVi + " | Diện tích: " + dienTich;
+            }
+        }
+
+        function calculateCircle() {
+            var r = parseFloat(document.getElementById('radius').value);
+            if (isNaN(r)) {
+                alert("Vui lòng nhập bán kính!");
+            } else {
+                const PI = 3.14;
+                var chuVi = 2 * PI * r;
+                var dienTich = PI * r * r;
+                document.getElementById('resCircle').innerHTML = "Chu vi: " + chuVi.toFixed(2) + " | Diện tích: " + dienTich.toFixed(2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <h3>a. Tính hình chữ nhật</h3>
+    Dài: <input type="text" id="dai"> Rộng: <input type="text" id="rong">
+    <button onclick="calculateRectangle()">Tính</button>
+    <p id="resRect"></p>
+
+    <hr>
+
+    <h3>b. Tính hình tròn (&pi; = 3.14)</h3>
+    Bán kính: <input type="text" id="radius">
+    <button onclick="calculateCircle()">Tính</button>
+    <p id="resCircle"></p>
+</body>
+</html>
