@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Lab JavaScript - Bài 1 & 2</title>
+</head>
+<body>
+
+<script>
+    // ===== BÀI 1: NHẬP 2 SỐ VÀ TÍNH TỔNG =====
+    var txta = prompt("Bài 1 - Nhập số A:");
+    var txtb = prompt("Bài 1 - Nhập số B:");
+
+    if (txta == null || txta == "" || isNaN(txta)) {
+        alert("Số A nhập sai định dạng!");
+    }
+    else if (txtb == null || txtb == "" || isNaN(txtb)) {
+        alert("Số B nhập sai định dạng!");
+    }
+    else {
+        var a = parseFloat(txta);
+        var b = parseFloat(txtb);
+        var result = a + b;
+
+        alert("Kết quả:\n" + a + " + " + b + " = " + result);
+    }
+
+    // ===== BÀI 2: KIỂM TRA CHẴN / LẺ =====
+    var txtc = prompt("Bài 2 - Nhập một số nguyên:");
+
+    if (txtc == null || txtc == "" || isNaN(txtc)) {
+        document.write("<p style='color:red'>Bạn phải nhập số!</p>");
+    }
+    else {
+        var c = parseInt(txtc);
+
+        if (c % 2 == 0) {
+            document.write("<p style='color:green'><b>" + c + " là số chẵn</b></p>");
+        } else {
+            document.write("<p style='color:blue'><i>" + c + " là số lẻ</i></p>");
+        }
+    }
+</script>
+
+</body>
+</html>
