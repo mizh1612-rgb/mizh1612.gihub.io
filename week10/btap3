@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplication Table</title>
+</head>
+<body>
+    <h3>Bảng cửu chương</h3>
+    <script>
+        document.write("<table border='1' cellpadding='5' style='border-collapse: collapse;'><tr>");
+        for (var i = 1; i <= 10; i++) {
+            document.write("<td>");
+            for (var j = 1; j <= 10; j++) {
+                document.write(i + " x " + j + " = " + (i * j) + "<br>");
+            }
+            document.write("</td>");
+            // Cứ sau 5 bảng thì xuống dòng cho đẹp
+            if (i == 5) document.write("</tr><tr>");
+        }
+        document.write("</tr></table>");
+    </script>
+</body>
+</html>
